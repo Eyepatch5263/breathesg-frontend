@@ -6,7 +6,7 @@ import {
 } from 'lucide-react'
 import './App.css'
 
-const API_BASE = import.meta.env.DJANGO_API_URL || 'http://localhost:8000/api';
+const API_BASE = import.meta.env.VITE_DJANGO_API_URL || 'http://localhost:8000/api';
 
 function App() {    
   const [token, setToken] = useState(localStorage.getItem('esg_token') || null)
